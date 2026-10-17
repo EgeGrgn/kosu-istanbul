@@ -213,7 +213,7 @@ const server = createHttpServer((request, response) => {
   })
 })
 
-server.listen(appPort, '127.0.0.1', () => {
+server.listen(appPort, '0.0.0.0', () => {
   console.log(`Koşu İstanbul hazır: http://127.0.0.1:${appPort}`)
 })
 
