@@ -1,0 +1,30 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #23372b;
+  background: #f5f4ed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: #23372b;
+  background: #f5f4ed;
+}
+
+#root {
+  min-height: 100vh;
+}
