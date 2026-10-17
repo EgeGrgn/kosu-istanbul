@@ -200,7 +200,7 @@ async function handleApi(request, response, url) {
 }
 
 const appPort = Number(process.env.PORT) || 5173
-const vite = await createViteServer({ configFile: false, plugins: [react()], cacheDir: join(process.cwd(), '.vite-local'), server: { middlewareMode: true, hmr: { port: appPort + 10_000 } }, appType: 'spa' })
+const vite = await createViteServer({ configFile: false, plugins: [react()], cacheDir: join(process.cwd(), '.vite-local'), server: { middlewareMode: true, allowedHosts: ['kosu-istanbul.onrender.com'], hmr: { port: appPort + 10_000 } }, appType: 'spa' })
 const server = createHttpServer((request, response) => {
   const url = new URL(request.url, 'http://localhost')
   if (url.pathname.startsWith('/api/')) {
